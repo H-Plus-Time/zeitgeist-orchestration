@@ -20,7 +20,7 @@
 ## Repositories
 * zeitgeist-core - strictly OLTP api (small-scale online traversals, comms with web front end)
 * zeitgeist-front - strictly (polymer) frontend code, no backend implementation details whatsoever
-* zeitgeist-ingestion - strictly fetching and processing of data (namely Pubmed XML), deposition into DSE cluster and Google Cloud Datastore
+* zeitgeist-data - strictly fetching and processing of data (namely Pubmed XML), deposition into DSE cluster and Google Cloud Datastore
 * zeitgeist-orchestration - glue code to automate spinning up and tearing down code
 ### post-project completion
 Three deployment steps:
