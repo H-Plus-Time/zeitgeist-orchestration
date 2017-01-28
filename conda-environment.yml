@@ -1,0 +1,8 @@
+dependencies:
+    - python=3.5
+    - six
+    - pandas
+    - pip:
+        - git+https://github.com/titipata/pubmed_parser.git
+        - goblin
+        - uvloop
