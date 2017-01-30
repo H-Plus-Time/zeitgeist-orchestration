@@ -2,7 +2,10 @@ dependencies:
     - python=3.5
     - six
     - pandas
+    - boto
     - pip:
         - git+https://github.com/H-Plus-Time/pubmed_parser.git
         - goblin
         - uvloop
+        - textacy
+        - google_compute_engine
