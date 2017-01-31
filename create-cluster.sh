@@ -28,3 +28,4 @@ gsutil -m cp gs://dataproc-initialization-actions/conda/install-conda-env.sh ./i
 chmod +x ./install-conda-env.sh
 # Create / Update conda environment via conda yaml
 CONDA_ENV_YAML=$CONDA_ENV_YAML_PATH ./install-conda-env.sh
+PATH=/usr/local/bin/miniconda/bin:$PATH python -m spacy.en.download all
