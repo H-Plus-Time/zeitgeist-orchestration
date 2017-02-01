@@ -1,6 +1,8 @@
 box: google/cloud-sdk
 deploy:
   steps:
+    - bigtruedata/gcloud-auth-service-account:
+        key: $GCP_SERVICE_ACCOUNT_JSON
     - script:
         name: install yarn, git
         code: |
