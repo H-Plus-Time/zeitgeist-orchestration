@@ -1,5 +1,5 @@
 CLUSTER_NAME="${CLUSTER_NAME:-my-dataproc-cluster}"
-
+gsutil cp create-cluster.sh gs://$BUCKET_NAME
 gcloud dataproc clusters create $CLUSTER_NAME \
     --metadata "MINICONDA_VARIANT=3,BUCKET_NAME=$BUCKET_NAME" \
     --initialization-actions \
