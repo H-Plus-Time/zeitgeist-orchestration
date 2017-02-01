@@ -1,0 +1,15 @@
+box: google/cloud-sdk
+deploy:
+  steps:
+    - script:
+        name: install yarn, git
+        code: |
+          apt-get update && apt-get install -y git
+    - script:
+        name: instantiate pyspark cluster, teardown
+        code: |
+          sh ./bootstrap.sh && sh ./delete-cluster.sh
+    - script:
+        name: populate data
+        code: |
+          sh ./populate_titan.sh

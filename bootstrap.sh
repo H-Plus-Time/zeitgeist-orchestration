@@ -7,5 +7,5 @@ gcloud dataproc clusters create $CLUSTER_NAME \
     --bucket $STAGING_BUCKET_NAME \
     --num-workers 2 \
     --scopes cloud-platform \
-    --worker-machine-type=n1-standard-2 \
+    --worker-machine-type=n1-highmem-2 \
     --master-machine-type=n1-highmem-2
