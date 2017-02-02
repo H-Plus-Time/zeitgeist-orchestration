@@ -11,3 +11,4 @@ dependencies:
         - textacy
         - google_compute_engine
         - jsonlines
+        - networkx
